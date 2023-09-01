@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica,Arial, sans-serif;
+}
+
+:root {
+  --header-background: #101935;
+  --text-color: #64aab6;
+  --sub-section-color: #9AD4D6;
+  --main-body-color: #F2FDFF;
+}
+  
+  /* Style the header */
+header {
+  background-color: var(--header-background);
+}
+  
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.name {
+    padding: 0 100px; 
+    color: var(--header-background);
+    margin: 10px 50px 10px 0;
+    background-color: var(--text-color);
+}
+
+.header-nav {
+  display: flex;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+  
+nav ul li {
+  margin-right: 40px;
+  color: var(--text-color);
+  border-bottom: 3px solid var(--text-color);
+}
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 40px;
+    font-size: 30px;
+  }
+  
+  /* Style the subtitle section */
+.subtitle-section {
+    display: block;
+    height: 250px;
+    background-color: var(--sub-section-color);
+    padding: 10px;
+    position: relative;
+  }
+
+.subtitle-section h2 {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  margin: 0;
+  color: var(--header-background);
+  margin: 10px 50px 10px 50px;
+  background-color: var(--text-color);
+  padding: 10px 10px;
+}
+
+.section-container {
+  color: var(--sub-section-color);
+  display: flex;
+  padding: 10px 0;
+  background-color: var(--main-body-color);
+}
+
+/**/
+.container {
+  display: flex;
+  background-color: var(--main-body-color);
+  justify-content: center;
+  padding: 15px;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.container-item-title {
+  border-right: 3px solid var(--header-background);
+  color: var(--text-color);
+  min-width: 25%;
+  text-align: right;
+  margin: 20px;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.container-item-content {
+  min-width: 65%;
+  text-align: left;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.container-item-contact-me {
+  min-width: 70%;
+  text-align: left;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  background-image: url(https://image.shutterstock.com/image-photo/royalty-high-quality-free-stock-260nw-768316276.jpg);
+  background-size: cover;
+  background-position: center;
+  flex-basis: 76%;
+  height: 400px;
+  margin-bottom: 10px;
+
+}
+
+.box-border {
+  border-color: var(--sub-section-color);
+  border-style: solid;
+  border-width: thick;
+  border-radius: 5px;
+}
+
+.box-1 {
+  min-height: 200px;
+  max-height: 200px;
+  flex-basis: calc(40% - 20px);
+  border-radius: 5px;
+}
+
+.box-2-image {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1S8tx90vXG1ah6ymt3KJnaueGqiUGYzSotg&usqp=CAU);
+  background-size: cover;
+  background-position: center;
+}
+
+.box-3-image {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXkKvoZJtFdadHLAGBsLlpKwD3jXIRrRGT0A&usqp=CAU);
+  background-size: cover;
+  background-position: center;
+}
+
+.box-4-image {
+  background-image: url(https://images.pexels.com/photos/269399/pexels-photo-269399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-size: cover;
+  background-position: center;
+}
+
+.box-5-image {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGxkWJvBLWQ8ieFmZ7mWaRs1i1hn1ZdSdDgg&usqp=CAU);
+  background-size: cover;
+  background-position: center;
+}
+
+.img {
+  background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.iconfinder.com%2Ficons%2F403022%2Fbusiness_man_male_user_avatar_profile_person_man_icon&psig=AOvVaw3txR077kO9C1GJeoqjNe-C&ust=1693532494837000&source=images&cd=vfe&opi=89978449&ved=0CA0QjRxqFwoTCIiKj6rihYEDFQAAAAAdAAAAABAD);
+  background-size: cover;
+}
+
+.contact-me-box ul {
+  display: flex;
+  color: var(--text-color);
+  text-align: left;
+  list-style: none;
+  justify-content: space-evenly;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.contact-me-box ul li:hover {
+  background-color: var(--sub-section-color);
+}
+
+.item-box {
+  background-color: var(--sub-section-color);
+  opacity: 80%;
+  margin-top: 120px;
+  font-weight: bolder;
+  width: 200px; 
+
+}
+
+section div h3 {
+  font-size: 30px;
+}
+
+section div p {
+  font-size: 20px;
+}
+
+.box:hover, .box-1:hover {
+  box-shadow: inset 0px 0px 8px var(--main-body-color), 0 0 15px var(--main-body-color);
+}
